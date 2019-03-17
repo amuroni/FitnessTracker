@@ -1,4 +1,4 @@
-"""this will contain the main classes of the app"""
+"""this will contain User attributes, connected to the exercises he does"""
 from v1.Exercise import Exercise
 
 
