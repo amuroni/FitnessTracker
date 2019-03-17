@@ -8,11 +8,13 @@ class User:
         self.name = name
         self. age = age
         self.weight = weight
-        self.exercise = Exercise
+        self.exercise = Exercise  # composition instead of inheritance, more logical in this case
+        self.user_exercises = []
 
     def presentation(self):
         print("User %s is %s years old and weighs %s kg" % (self.name, self.age, self.weight))
 
     def add_lift(self, exercise):
-        self.user_lifts = [exercise]
+        self.user_exercises.append(exercise)
         print(self.name + " just did a " + exercise.name + " at " + exercise.weight)
+

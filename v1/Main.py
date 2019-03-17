@@ -6,5 +6,9 @@ from v1.Exercise import *
 user1 = User(input("What's your name"), input("What's your age"), input("What's your weight?"))
 user1.presentation()
 
-exercise1 = Exercise(input("What exercise did you just do?"), input("With how much weight?"))
+exercise1 = Exercise(input("What exercise did you do first?"), input("With how much weight?"))
+exercise2 = Exercise(input("What exercise did you do for second?"), input("With how much weight?"))
+exercise3 = Exercise(input("What exercise did you do the third time?"), input("With how much weight?"))
 user1.add_lift(exercise1)
+user1.add_lift(exercise2)
+user1.add_lift(exercise3)
