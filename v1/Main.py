@@ -15,3 +15,4 @@ user = create_user(int(input("How many users would you like to create?")))  # do
 # note for future self -> check differences and build the def accordingly
 # i can now create the user with the return statement at the end of create_user
 # however, only the last one created is returned, the first one is not kept in memory.
+# ok, I managed to put multiple users in a list, so it's actually manageable to create more user
