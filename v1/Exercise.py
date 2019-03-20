@@ -4,7 +4,7 @@
 class Exercise:
 
     def __init__(self, exercise_name, exercise_weight):
-        self.name = exercise_name
+        self.exercise_name = exercise_name
         self.reps = 1
         self.sets = 1
-        self.weight = exercise_weight
+        self.exercise_weight = exercise_weight

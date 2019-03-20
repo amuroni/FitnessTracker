@@ -1,5 +1,6 @@
 """main app file - v1 will focus on assigning attributes and gathering + showing data to the user"""
-from v1.Create_user import create_user
+from v1.User import *
+
 
 # user1 = User(input("What's your name"), input("What's your age"), input("What's your weight?"))
 # user_list.presentation()
@@ -10,9 +11,17 @@ from v1.Create_user import create_user
 # user1.add_lift(exercise2)
 # user1.add_lift(exercise3)
 
-user = create_user(int(input("How many users would you like to create?")))  # does not create a user obj?
-# user1 = User("a", "1", "3")  # actually creates a user obj
-# note for future self -> check differences and build the def accordingly
-# i can now create the user with the return statement at the end of create_user
-# however, only the last one created is returned, the first one is not kept in memory.
-# ok, I managed to put multiple users in a list, so it's actually manageable to create more user
+# users = User.create_user(User, int(input("How many users would you like to create?")))  # does not create a user obj?
+# for user in users:
+#     user.add_lift(int(input("How many exercises do you wanna track?")))
+
+users_num = int(input("How many users would you like to create?"))
+user_list = []
+for user in range(0, users_num):
+    user_list.append(User(input("What's your name"), input("What's your age"), input("What's your weight")))
+for user in user_list:
+    user.add_lift(int(input("Hello %s, how many exercises do you want to track?" % user.name)))
+for user in user_list:
+    name = user.name
+    for exercise in user.exercise:
+        print(name + " " + exercise.exercise_name + " " + exercise.exercise_weight )
