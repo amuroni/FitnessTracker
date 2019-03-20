@@ -24,4 +24,4 @@ for user in user_list:
 for user in user_list:
     name = user.name
     for exercise in user.exercise:
-        print(name + " " + exercise.exercise_name + " " + exercise.exercise_weight )
+        print(name + " " + exercise.exercise_name + " " + exercise.exercise_weight)
