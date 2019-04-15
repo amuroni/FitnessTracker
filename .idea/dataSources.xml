@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="users" uuid="2c5b0d6f-09f7-4d8b-b0e9-499c2b266c69">
+    <data-source source="LOCAL" name="database" uuid="dfb98326-b0fa-4f55-aade-53e13c9c94a9">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\muron\IdeaProjects\FitnessTracker\v4\users.sqlite</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\muron\IdeaProjects\FitnessTracker\v4\database.sqlite</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>
