@@ -12,7 +12,8 @@ class Database:
         self.db.execute('CREATE TABLE IF NOT EXISTS users (id TEXT, name TEXT, age INTEGER, weight INTEGER)')
         self.db.execute('CREATE TABLE IF NOT EXISTS exercises (user_id TEXT, name TEXT, weight INTEGER)')
 
-    def create_user(self, users_num):
+    def create_user(self):
+        users_num = int(input("How many users would you like to create/update?"))
         for user in range(0, users_num):
             user_name = input("What's your name")
             self.cursor.execute("SELECT * FROM users WHERE name = ?", (user_name,))
